@@ -9,10 +9,10 @@ Según Martín Fowler la arquitectura de microservicios es una particular manera
 
 En la arquitectura de microservicios, los servicios deben ser pequeños, granulares, aislados, independientes y distribuibles. Estas características permiten:
 
-. Priorizar recursos escasos.
-. Desarrollo en paralelo, por diferentes grupos de desarrollo.
-. Independencia tecnológica de cada servicio.
-. Escalamiento individualizado.
+* Priorizar recursos escasos.
+* Desarrollo en paralelo, por diferentes grupos de desarrollo.
+* Independencia tecnológica de cada servicio.
+* Escalamiento individualizado.
 
 ### Compartiendo código entre microservicios
 Una de las inquietudes en el proceso de adopción de microservicios es ¿Cómo compartir código entre microservicios? una respuesta a este punto puede ser la generación de librerías de utilitarias técnicas y funcionalidades comunes, se debe tener cuidado en evitar el acoplamiento entre servicios. También se puede pensar en configurar estas funcionalidades como servicios independientes que puedan se usados por los otros servicios. Con estas dos opciones se debe buscar y definir un punto de equilibrio para este tema.
