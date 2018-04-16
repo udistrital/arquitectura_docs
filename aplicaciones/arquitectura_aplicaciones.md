@@ -25,4 +25,4 @@ Una tercera preocupación es que dada la alta granularidad de los servicios como
 
 Para gestionar estas dependencias se sugiere el uso de un API Gateway, esta es una capa abstracta que oculta los microservicios a los clientes y ofrece un end-point único para la comunicación. Esto nos permite adicionalmente la monitorización de los microservicios.
 
-![alt text](microservicios.png "Logo Title Text 1")
+![microservicios](microservicios.png "microservicios 1")
