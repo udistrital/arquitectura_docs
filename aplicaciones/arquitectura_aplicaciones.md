@@ -25,4 +25,10 @@ Una tercera preocupación es que dada la alta granularidad de los servicios como
 
 Para gestionar estas dependencias se sugiere el uso de un API Gateway, esta es una capa abstracta que oculta los microservicios a los clientes y ofrece un end-point único para la comunicación. Esto nos permite adicionalmente la monitorización de los microservicios.
 
-![microservicios](microservicios.png "microservicios 1")
+![microservicios](microservicios.png "microservicios API Gateway")
+
+# Entorno general de aplicaciones
+
+![entorno](generico desarollo.png "entorno general")
+
+La generalidad de las aplicaciones existentes es una mixtura de arquitecturas no unificadas entre las cuales se mantienen aplicaciones con arquitecturas monolíticas, cliente servidor y orientadas a servicios; el mantenimiento y gestión de dicho entorno se convierte en fuente frecuente de problemas en los que por desconocimiento, por falta de documentación o por falta de planeación se realizan retrabajos, desarrollos duplicados,
