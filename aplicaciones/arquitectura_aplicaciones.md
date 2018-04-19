@@ -29,6 +29,6 @@ Para gestionar estas dependencias se sugiere el uso de un API Gateway, esta es u
 
 # Entorno general de aplicaciones
 
-![entorno](generico_desarollo.png "entorno general")
+![entorno](genericodesarollo.png "entorno general")
 
 La generalidad de las aplicaciones existentes es una mixtura de arquitecturas no unificadas entre las cuales se mantienen aplicaciones con arquitecturas monolíticas, cliente servidor y orientadas a servicios; el mantenimiento y gestión de dicho entorno se convierte en fuente frecuente de problemas en los que por desconocimiento, por falta de documentación o por falta de planeación se realizan retrabajos, desarrollos duplicados,
