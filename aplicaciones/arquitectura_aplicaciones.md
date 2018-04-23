@@ -1,6 +1,15 @@
+
 # Arquitectura de aplicaciones
 
-## Introducción
+## Entorno general de aplicaciones
+
+![entorno](genericodesarollo.png "entorno general")
+
+El entorno de las aplicaciones actualmente es una mixtura de arquitecturas, entre las cuales se mantienen aplicaciones con arquitecturas monolíticas, cliente servidor y orientadas a servicios; el mantenimiento y gestión de dicho entorno se convierte en fuente frecuente de problemas en los que por desconocimiento, por falta de documentación o por falta de planeación se realizan retrabajos, desarrollos duplicados, incongruencia en la información y otros problemas que se presentan frecuentemente.
+
+Aunque ya existe una definición de elementos comunes que compartirán las aplicaciones o componentes del entorno de trabajo, como un servidos de identidades,  
+
+## Microservicios
 
 ### Micro-servicios, que son?
 Las arquitecturas orientadas a micro-servicios buscan descomponer aplicaciones monolíticas para mejorar las capacidades de despliegue y escalabilidad  en ambientes de frecuentes cambios y evolución de los sistemas. Esta descomposición propone retos no presentes en aplicaciones monolíticas.
@@ -26,9 +35,3 @@ Una tercera preocupación es que dada la alta granularidad de los servicios como
 Para gestionar estas dependencias se sugiere el uso de un API Gateway, esta es una capa abstracta que oculta los microservicios a los clientes y ofrece un end-point único para la comunicación. Esto nos permite adicionalmente la monitorización de los microservicios.
 
 ![microservicios](microservicios.png "microservicios API Gateway")
-
-# Entorno general de aplicaciones
-
-![entorno](genericodesarollo.png "entorno general")
-
-La generalidad de las aplicaciones existentes es una mixtura de arquitecturas no unificadas entre las cuales se mantienen aplicaciones con arquitecturas monolíticas, cliente servidor y orientadas a servicios; el mantenimiento y gestión de dicho entorno se convierte en fuente frecuente de problemas en los que por desconocimiento, por falta de documentación o por falta de planeación se realizan retrabajos, desarrollos duplicados,
