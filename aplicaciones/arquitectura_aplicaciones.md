@@ -36,28 +36,34 @@ Para gestionar estas dependencias se sugiere el uso de un API Gateway, esta es u
 
 ![microservicios](microservicios.png "microservicios API Gateway")
 
-### Arquitectura general de microservicios
+## Arquitectura general de microservicios
 La generación de microservicios permite desacoplar los módulos de las aplicaciones para facilitar su despliegue, pero esto supone el reto de establecer el mecanismo para que estos servicios trabajen en conjunto, la siguiente gráfica presenta la estructura propuesta para organizar dicho mecanismo, permitiendo a característica de servicios agnósticos.
 
 ![arquitectura_microservicios](arquitectura_general_servicios.png "microservicios arquitectura")
 
-#### Clente:
+### Clente:
 El cliente en la estructura de aplicaciones consistenen un estático que obedece al aradigma de "serverless" que únicamente maneja la capa de presentación hacia el usuario final, este componente de la estructura de aplicaciones genera peticiones al api-manager las cuales estánnorientadas a servicios de tipo MID.
 
-#### Identity Server:
+### Identity Server:
 El Indentity server es el componente de autenticación, este componente es único para todos los servicios, su responsabilidad es autenticar a los usuarios, generar el token de autenticación y validar este cunado las APIs lo solicitan.
 
-#### API Manager:
+### API Manager:
 El API Manager se comporta como un Gateway de solicitudes entre aplicaciones, toda la comunicación de solicitudes entre servicios debe ser atentida por el API Manager y este direccionará la petición deacuerdo al catalogo de servicios configurados.
 
-#### Auditoría:
+### Auditoría:
 El servicio de auditoría es el responsable de registrar todos los eventos que ocurren entre los diferentes servicios, ya que el responsable de gestionar estos eventos es el API Manager, sera este quien se conecte con el servicio de auditoría para el registro del evento.
 
-#### RULER:
+### RULER:
 El ruler es el gestor de reglas de negocio para los servicios de tipo MID, a este le consultan la declaración de todos los predicaos que forman la base de conocimiento para cada contexto.
 
-#### CRUD API:
+### CRUD API:
 Los servicios de tipo CRUD son la capa de abstracción para la persistencia, en esta capa se manejan dos tipos de servicios: los relacionales y los no relacionales. Estos servicios no manejan la lugica de negocio de ningún contexto, solo representan las diferentes entidades que existen en las bases de datos y controlan el acceso a las operaciones que en estas se permiten.
 
-#### MID API:
+### MID API:
 En estos servicios, se maneja la lógica de negocio en colaboración con el RULER, dada la orientación a microservicios, los servicios de esta capa serán servicios integradores que manejan además de la lógica las transacciones requeridas por el contexto.
+
+## Modelo de implementación
+aqui tecnologías asociadas a la implementación
+
+## Modelo de despliegue
+aquí tecnologías asociadas al despliegue
