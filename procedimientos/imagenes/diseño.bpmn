@@ -75,11 +75,11 @@
       <bpmn:outgoing>SequenceFlow_0uncz1h</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_0iz3sau</bpmn:outgoing>
     </bpmn:parallelGateway>
-    <bpmn:inclusiveGateway id="ExclusiveGateway_0k69c3e">
+    <bpmn:parallelGateway id="ExclusiveGateway_0k69c3e">
       <bpmn:incoming>SequenceFlow_0682y7w</bpmn:incoming>
       <bpmn:incoming>SequenceFlow_1m9fg8w</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_02fwiwo</bpmn:outgoing>
-    </bpmn:inclusiveGateway>
+    </bpmn:parallelGateway>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_03mi37w">
@@ -239,7 +239,7 @@
           <dc:Bounds x="472" y="-404" width="0" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="InclusiveGateway_165gmif_di" bpmnElement="ExclusiveGateway_0k69c3e">
+      <bpmndi:BPMNShape id="ParallelGateway_1om11wf_di" bpmnElement="ExclusiveGateway_0k69c3e">
         <dc:Bounds x="1127" y="-423" width="50" height="50" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1152" y="-445" width="0" height="12" />
