@@ -5,3 +5,8 @@
 ## Análisis
 
 ![analisis](imagenes/analisis.png "procedimiento de análisis")
+
+
+## Diseño
+
+![diseño](imagenes/diseno.png "procedimiento de diseño")
