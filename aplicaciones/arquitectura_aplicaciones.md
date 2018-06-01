@@ -67,3 +67,5 @@ aqui tecnologías asociadas a la implementación
 
 ## Modelo de despliegue
 aquí tecnologías asociadas al despliegue
+
+![entorno_ci](entorno_ci.png "entorno ci")
