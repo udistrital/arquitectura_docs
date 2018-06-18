@@ -19,6 +19,7 @@
         <bpmn:flowNodeRef>Task_07muk2h</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_0e92zzs</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>EndEvent_0r66j7v</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ExclusiveGateway_1wxgpde</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1m1njkr" name="Documentación del proyecto" />
     </bpmn:laneSet>
@@ -78,6 +79,7 @@
     </bpmn:task>
     <bpmn:parallelGateway id="ExclusiveGateway_1wf9l3n">
       <bpmn:incoming>SequenceFlow_06g2ac0</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_08f3b2n</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1lledn5</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_0117658</bpmn:outgoing>
       <bpmn:outgoing>SequenceFlow_099uscy</bpmn:outgoing>
@@ -133,7 +135,7 @@
     <bpmn:sequenceFlow id="SequenceFlow_10o06tm" sourceRef="Task_07muk2h" targetRef="ExclusiveGateway_0xemkej" />
     <bpmn:task id="Task_0e92zzs" name="Ejecutar test unitarios">
       <bpmn:incoming>SequenceFlow_0ut48il</bpmn:incoming>
-      <bpmn:outgoing>SequenceFlow_148jz97</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_1xd63q4</bpmn:outgoing>
       <bpmn:property id="Property_1jf6uds" name="__targetRef_placeholder" />
       <bpmn:dataInputAssociation id="DataInputAssociation_0pa661r">
         <bpmn:sourceRef>DataStoreReference_0b09nxt</bpmn:sourceRef>
@@ -141,13 +143,24 @@
       </bpmn:dataInputAssociation>
     </bpmn:task>
     <bpmn:endEvent id="EndEvent_0r66j7v">
-      <bpmn:incoming>SequenceFlow_148jz97</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0onw5xy</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:sequenceFlow id="SequenceFlow_148jz97" sourceRef="Task_0e92zzs" targetRef="EndEvent_0r66j7v" />
+    <bpmn:exclusiveGateway id="ExclusiveGateway_1wxgpde">
+      <bpmn:incoming>SequenceFlow_1xd63q4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0onw5xy</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_08f3b2n</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="SequenceFlow_1xd63q4" sourceRef="Task_0e92zzs" targetRef="ExclusiveGateway_1wxgpde" />
+    <bpmn:sequenceFlow id="SequenceFlow_0onw5xy" name="si" sourceRef="ExclusiveGateway_1wxgpde" targetRef="EndEvent_0r66j7v" />
+    <bpmn:sequenceFlow id="SequenceFlow_08f3b2n" name="no" sourceRef="ExclusiveGateway_1wxgpde" targetRef="ExclusiveGateway_1wf9l3n" />
     <bpmn:textAnnotation id="TextAnnotation_0nijzlv">
       <bpmn:text>Los test unitarios basados en los criterios de aceptación de las historias de usuarios</bpmn:text>
     </bpmn:textAnnotation>
     <bpmn:association id="Association_0eoj3xt" sourceRef="Task_1y65rvp" targetRef="TextAnnotation_0nijzlv" />
+    <bpmn:association id="Association_0qglh8t" sourceRef="ExclusiveGateway_1wxgpde" targetRef="TextAnnotation_0kv0ozm" />
+    <bpmn:textAnnotation id="TextAnnotation_0kv0ozm">
+      <bpmn:text>Los test ejecutados son satisfactorios</bpmn:text>
+    </bpmn:textAnnotation>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_03mi37w">
@@ -349,13 +362,6 @@
           <dc:Bounds x="1082" y="-304" width="0" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="SequenceFlow_148jz97_di" bpmnElement="SequenceFlow_148jz97">
-        <di:waypoint x="1308" y="-318" />
-        <di:waypoint x="1450" y="-318" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1379" y="-339" width="0" height="12" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_0ki22pd_di" bpmnElement="DataOutputAssociation_0ki22pd">
         <di:waypoint x="499" y="-424" />
         <di:waypoint x="499" y="-544" />
@@ -366,6 +372,42 @@
         <di:waypoint x="780" y="-623" />
         <di:waypoint x="1258" y="-623" />
         <di:waypoint x="1258" y="-358" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ExclusiveGateway_1wxgpde_di" bpmnElement="ExclusiveGateway_1wxgpde" isMarkerVisible="true">
+        <dc:Bounds x="1358" y="-343" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1383" y="-365" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1xd63q4_di" bpmnElement="SequenceFlow_1xd63q4">
+        <di:waypoint x="1308" y="-318" />
+        <di:waypoint x="1358" y="-318" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1333" y="-339" width="0" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0onw5xy_di" bpmnElement="SequenceFlow_0onw5xy">
+        <di:waypoint x="1408" y="-318" />
+        <di:waypoint x="1450" y="-318" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1425" y="-339" width="8" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_08f3b2n_di" bpmnElement="SequenceFlow_08f3b2n">
+        <di:waypoint x="1383" y="-293" />
+        <di:waypoint x="1383" y="-133" />
+        <di:waypoint x="590" y="-133" />
+        <di:waypoint x="590" y="-293" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="980" y="-154" width="13" height="12" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0kv0ozm_di" bpmnElement="TextAnnotation_0kv0ozm">
+        <dc:Bounds x="1333" y="-437" width="99.99241507552793" height="52.823315118397076" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_0qglh8t_di" bpmnElement="Association_0qglh8t">
+        <di:waypoint x="1383" y="-343" />
+        <di:waypoint x="1383" y="-384" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
