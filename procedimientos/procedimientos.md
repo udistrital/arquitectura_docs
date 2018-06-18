@@ -10,3 +10,7 @@
 ## Diseño
 
 ![diseño](imagenes/diseno.png "procedimiento de diseño")
+
+## Codificación
+
+![diseño](imagenes/codificacion.png "procedimiento de codificación")
