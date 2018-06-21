@@ -15,6 +15,6 @@
 
 ![diseño](imagenes/codificacion.png "procedimiento de codificación")
 
-## Codificación
+## Pruebas
 
 ![pruebas](imagenes/pruebas.png "procedimiento de pruebas")
