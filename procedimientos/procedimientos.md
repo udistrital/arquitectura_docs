@@ -14,3 +14,7 @@
 ## Codificación
 
 ![diseño](imagenes/codificacion.png "procedimiento de codificación")
+
+## Codificación
+
+![pruebas](imagenes/pruebas.png "procedimiento de pruebas")
