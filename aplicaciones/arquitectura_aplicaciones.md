@@ -72,10 +72,10 @@ aquí tecnologías asociadas al despliegue
 
 ## Lineamientos generales de arquitectura
 
-## sobre la estructura
+### sobre la estructura
 
 * Los servicios de CRUD solo deben obedecer a acciones de creación, edición, consulta o deshabilitación de registros, en ningún caso deben manejar transacciones de negocio que implican lógica  de negocio.
 * Las transacciones deben ser maejadas en los servicios integradores (servicios MID).
 * La logica de negocio debe ser externa a la codificación del componente y se consume como servicio del RULER.
 * Ningun microservicio debe consumir directamente otro microservicio y el llamado ocurre mediante el Gateway (API Manager).
-* Los microservicios integradores (servicios MID) no deben hacer realizar operaciones sobre la persistencia ni manejan conexiones a bases de datos, ya que delegan estas operaciones a los servicios CRUD.
+* Los microservicios integradores (servicios MID) no deben realizar operaciones sobre la persistencia ni manejar conexiones a bases de datos, ya que delegan estas operaciones a los servicios CRUD.
