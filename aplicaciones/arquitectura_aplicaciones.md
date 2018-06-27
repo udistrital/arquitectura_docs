@@ -66,7 +66,7 @@ En estos servicios, se maneja la lógica de negocio en colaboración con el RULE
 Con la proliferación de microservicios, permitir que cada uno maneje su configuración puede ser un problema de gestión inmanejable, por esto debe existir un nodo centralizado de configuración que actúe como repositorio de la configuración para todo el entorno de microservicios.
 
 ## Modelo de implementación
-![arquitectura_implementacion_microservicios](arquitectura_implementacion_microservicios "arquitectura implementación")
+![arquitectura_implementacion_microservicios](arquitectura_implementacion_microservicios.png "arquitectura implementación")
 ## Modelo de despliegue
 
 ![entorno_ci](entorno_ci.png "entorno ci")
