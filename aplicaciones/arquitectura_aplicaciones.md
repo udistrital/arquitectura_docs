@@ -47,8 +47,8 @@ El cliente en la estructura de aplicaciones consistenen un estático que obedece
 ### Identity Server:
 El Indentity server es el componente de autenticación, este componente es único para todos los servicios, su responsabilidad es autenticar a los usuarios, generar el token de autenticación y validar este cunado las APIs lo solicitan.
 
-### API Manager:
-El API Manager se comporta como un Gateway de solicitudes entre aplicaciones, toda la comunicación de solicitudes entre servicios debe ser atentida por el API Manager y este direccionará la petición deacuerdo al catalogo de servicios configurados.
+### API Gateway:
+El API Gateway se comporta como un Gateway de solicitudes entre aplicaciones, toda la comunicación de solicitudes entre servicios debe ser atentida por el API Gateway y este direccionará la petición deacuerdo al catalogo de servicios configurados.
 
 ### Auditoría:
 El servicio de auditoría es el responsable de registrar todos los eventos que ocurren entre los diferentes servicios, ya que el responsable de gestionar estos eventos es el API Manager, sera este quien se conecte con el servicio de auditoría para el registro del evento.
@@ -62,9 +62,11 @@ Los servicios de tipo CRUD son la capa de abstracción para la persistencia, en 
 ### MID API:
 En estos servicios, se maneja la lógica de negocio en colaboración con el RULER, dada la orientación a microservicios, los servicios de esta capa serán servicios integradores que manejan además de la lógica las transacciones requeridas por el contexto.
 
-## Modelo de implementación
-aqui tecnologías asociadas a la implementación
+### Configuración
+Con la proliferación de microservicios, permitir que cada uno maneje su configuración puede ser un problema de gestión inmanejable, por esto debe existir un nodo centralizado de configuración que actúe como repositorio de la configuración para todo el entorno de microservicios.
 
+## Modelo de implementación
+![arquitectura_implementacion_microservicios](arquitectura_implementacion_microservicios "arquitectura implementación")
 ## Modelo de despliegue
 
 ![entorno_ci](entorno_ci.png "entorno ci")
