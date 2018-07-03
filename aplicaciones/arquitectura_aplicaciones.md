@@ -21,12 +21,12 @@ La presente propuesta arquitectural esta enmarcada por las arquitecturas orienta
 
 Los principios rectores de la arquitectura orientada a servicios son:
 
--- El valor del negocio por encima de la estratégia técnica.
--- Las metas estrategicas por encima de los beneficios de los proyectos.
--- La interoperatibidad intrínseca por encima de la integración personalizada.
--- Los servicios compartidos por encima de las implementaciones de propósito específico.
--- La flexibilidad por encima de la optimización.
--- El refinamiento evolutivo por encima de la búsqueda de la perfección inicial.
+-- **El valor del negocio** por encima de la estratégia técnica.
+-- **Las metas estrategicas** por encima de los beneficios de los proyectos.
+-- **La interoperatibidad intrínseca** por encima de la integración personalizada.
+-- **Los servicios compartidos** por encima de las implementaciones de propósito específico.
+-- **La flexibilidad** por encima de la optimización.
+-- **El refinamiento evolutivo** por encima de la búsqueda de la perfección inicial.
 
 ## Microservicios
 
