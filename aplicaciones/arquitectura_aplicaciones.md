@@ -19,7 +19,7 @@ Aunque ya existe una definición de elementos comunes que compartirán las aplic
 
 La presente propuesta arquitectural esta enmarcada por las arquitecturas orientadas a servicios por lo tanto se defeine respetando los principios y priorizaciones que esta define, la orientación a servicios permite la entrega continua de valor al negocio de la organización, con mayor agilidad y alineada con necesidades cambiantes.
 
-Los principios rectores de la arquitectura orientada a servicios son:
+La arquitectura orientada a servicios , según el manifiesto SOA, establece las siguientes prioridades:
 
 * **El valor del negocio** por encima de la estratégia técnica.
 * **Las metas estrategicas** por encima de los beneficios de los proyectos.
@@ -27,6 +27,18 @@ Los principios rectores de la arquitectura orientada a servicios son:
 * **Los servicios compartidos** por encima de las implementaciones de propósito específico.
 * **La flexibilidad** por encima de la optimización.
 * **El refinamiento evolutivo** por encima de la búsqueda de la perfección inicial.
+
+Así mismo establece unos principios rectores en los que:
+* Reconoce la implicación de cambios en muchos niveles de la arquitectura.
+* No está atada a una tecnología o estándar particular.
+* Persigue la uniformidad hacia el exterior y a la vez que permitir la diversidad interna.
+* Se identifican los servicios directamente con la colaboración de los interezados en el negocio y en la tecnología.
+* Maximiza el uso de los servicios.
+* Verifica la satisfacción de los requerimientos y las metas del negocio a través de los servicios.
+* Evoluciona los servicios y su organización en respuesta al uso real.
+* Separa los aspectos de un sistema en relación a sus tasas de cambio.
+* Reduce las dependencia implicitas y publica las dependencias externas para incrementar la robustez.
+* Organiza servicios alredeor de unidades funcionales facilitando su cohesión y administración.
 
 ## Microservicios
 
