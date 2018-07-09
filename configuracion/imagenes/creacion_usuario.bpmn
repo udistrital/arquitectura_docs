@@ -53,11 +53,15 @@
       <bpmn:incoming>SequenceFlow_0vop6sa</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="SequenceFlow_0vop6sa" sourceRef="Task_0n6kq5t" targetRef="EndEvent_1b2imrt" />
+    <bpmn:textAnnotation id="TextAnnotation_0l0b0kv">
+      <bpmn:text>Esta autenticación debe hacerse en el sistema de wso2 o ofrecer una interface desde "nodo central"</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_03i072h" sourceRef="Task_0bxsnpf" targetRef="TextAnnotation_0l0b0kv" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0b17abl">
       <bpmndi:BPMNShape id="Participant_1hpue2k_di" bpmnElement="Participant_1hpue2k">
-        <dc:Bounds x="123" y="82" width="1186" height="186" />
+        <dc:Bounds x="123" y="-10" width="1186" height="278" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="187" y="152" width="36" height="36" />
@@ -66,7 +70,7 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_07ha427_di" bpmnElement="Lane_07ha427">
-        <dc:Bounds x="153" y="82" width="1156" height="186" />
+        <dc:Bounds x="153" y="-10" width="1156" height="278" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Task_0bxsnpf_di" bpmnElement="Task_0bxsnpf">
         <dc:Bounds x="273" y="130" width="100" height="80" />
@@ -140,6 +144,13 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1148" y="149" width="0" height="12" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0l0b0kv_di" bpmnElement="TextAnnotation_0l0b0kv">
+        <dc:Bounds x="373" y="50" width="220" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_03i072h_di" bpmnElement="Association_03i072h">
+        <di:waypoint x="373" y="142" />
+        <di:waypoint x="430" y="110" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
