@@ -50,7 +50,7 @@
       <bpmn:outgoing>SequenceFlow_1nbt80i</bpmn:outgoing>
     </bpmn:task>
     <bpmn:sequenceFlow id="SequenceFlow_1ocpi84" sourceRef="Task_1ljfyi7" targetRef="Task_0afecke" />
-    <bpmn:task id="Task_0c1vuvb" name="Guardar aplicación">
+    <bpmn:task id="Task_0c1vuvb" name="Confirmar registro">
       <bpmn:incoming>SequenceFlow_1nbt80i</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0w7g4rm</bpmn:outgoing>
     </bpmn:task>
