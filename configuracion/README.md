@@ -12,6 +12,10 @@
 
 ![creacion_aplicacion_nodo](imagenes/creacion_aplicacion_nodo.png "procedimiento de creacion de aplicaciones en el nodo central")
 
+## Creación de opciones en el nodo central
+
+![creacion_opcion_nodo](imagenes/creacion_opcion_nodo.png "procedimiento de creacion de opciones en el nodo central")
+
 ## Creación de perfiles en el nodo central
 
 ![creacion_perfil_nodo](imagenes/creacion_perfil_nodo.png "procedimiento de creacion de perfiles en el nodo central")
