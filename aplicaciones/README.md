@@ -3,9 +3,9 @@
 
 ## Alcance
 
-La arquitectura de aplicaciones define el contexto de la estructura y características de las aplicaciones de los proyectos de desarrollo sobre las nuevas tecnologías seleccionadas para los nuevos proyectos, la arquitectura aquí presentada pretende definir un entorno que permita aplicar metodologías ágiles al proceso de desarrollo con un alto grado de automatización de las diferentes etapas del ciclo de vida de desarrollo.
+La arquitectura de aplicaciones define el contexto de la estructura y características de las aplicaciones de los proyectos de desarrollo, la arquitectura aquí presentada pretende definir un entorno que permita aplicar metodologías ágiles al proceso de desarrollo con un alto grado de automatización de las diferentes etapas del ciclo de vida de desarrollo.
 
-La presente propuesta arquitectural surge de la difcultad actual en el desarrollo del ciclo de vida de los proyectos de software por la característica monolítica de las aplicaciones y su puesta en producción. La arquitectura actual es inapropiada para promover la implantación total de agilismo en los procesos de desarrollo y en las diferentes fases o etapas que estos conllevan.
+La presente propuesta arquitectural surge de la difcultad actual en el desarrollo del ciclo de vida de los proyectos de software por la característica monolítica de las aplicaciones y su puesta en producción. La estructura actual definida para las aplicaciones en los proyectos de desarrollo es inapropiada para promover la implantación total de agilismo en los procesos de desarrollo y en las diferentes fases o etapas que estos conllevan.
 
 ## Entorno general de aplicaciones
 
@@ -44,6 +44,8 @@ Así mismo establece unos principios rectores en los que:
 
 ### Micro-servicios, que son?
 Las arquitecturas orientadas a micro-servicios buscan descomponer aplicaciones monolíticas para mejorar las capacidades de despliegue y escalabilidad  en ambientes de frecuentes cambios y evolución de los sistemas. Esta descomposición propone retos no presentes en aplicaciones monolíticas.
+
+Microservicios es el nombre de un estilo arquitectural de software, influenciado por el software distribuido. Un aspecto distintivo es la aplicación a nivel de componentes del principio de resposabilidad única, lo que se refleja en el hecho de que cada uno de los microservicios es responsable de un único problema en concreto.
 
 Según Martín Fowler la arquitectura de microservicios es una particular manera de diseñar aplicaciones de software como un conjunto de servicios independientemente desplegables.
 
@@ -103,6 +105,16 @@ Con la proliferación de microservicios, permitir que cada uno maneje su configu
 ![entorno_ci](entorno_ci.png "entorno ci")
 
 ## Lineamientos generales de arquitectura
+
+La idea principal en microservicios es la de procesos pequeños y autónomos que trabajan en colaboración para cumplir cierta lógica de negocio. Los microservicios deben estar modelados en torno al dominio en cuestión, de forma que las fronteras entre cada uno de ellos sean claras, fáciles de entender y poco mutables (principio de responsabilidad única).
+
+Los microservicios deben estar ligados a la automatización de procesos, con procesos automatizados la liberación de versiones y la evolución natural del sistema es posible y económicamente viable.
+
+Otro principio importante es la ocultación de detalles de implementación. Cuando los microservicios interaccionan mediante APIs estables, entonces los equipos responsables de los microservicios pueden funcionar de forma ágil.
+
+Un factor importante es el despliegue individualizado. Ser capaz de desplegar servicios individuales sin afectar el resto es clave para una arquitectura de microservicios.
+
+Dada la naturaleza distribuida de los microservicios hay dos factores asociados a esta naturaleza que son vitales en estos estilos arquitecturales, estos son el aislamiento de fallos y la observabilidad de los microservicios. En un sistema distribuído es fundamental que si un elemento del sistema tiene un fallo, el mismo no se propague en cascada por el resto.
 
 ### sobre la estructura
 
