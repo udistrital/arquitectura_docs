@@ -1,6 +1,8 @@
 # Procedimientos de desarrollo
 
-## General
+## Gestión
+
+![gestion](imagenes/gestion.png "procedimiento de gestión")
 
 ## Análisis
 
