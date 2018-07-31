@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_030dqsr" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.14.0">
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_030dqsr" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.16.2">
   <bpmn:collaboration id="Collaboration_03mi37w">
     <bpmn:participant id="Participant_1ygm52w" name="Diseño de productos de software" processRef="Process_0mhpx6g" />
   </bpmn:collaboration>
@@ -18,7 +18,6 @@
         <bpmn:flowNodeRef>ExclusiveGateway_1s4sffw</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Task_1fyk74x</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_1m1njkr" name="Documentación del proyecto" />
     </bpmn:laneSet>
     <bpmn:sequenceFlow id="SequenceFlow_0p1u87j" sourceRef="Task_0sa8cze" targetRef="Task_1fyk74x" />
     <bpmn:startEvent id="StartEvent_110fa2y">
@@ -51,9 +50,6 @@
     </bpmn:task>
     <bpmn:sequenceFlow id="SequenceFlow_0iz3sau" sourceRef="ExclusiveGateway_014xf5e" targetRef="Task_1xgdyze" />
     <bpmn:sequenceFlow id="SequenceFlow_0682y7w" sourceRef="Task_1xgdyze" targetRef="ExclusiveGateway_0k69c3e" />
-    <bpmn:dataStoreReference id="DataStoreReference_0z87cog" name="Diagramas de datos" />
-    <bpmn:dataStoreReference id="DataStoreReference_07rp01m" name="Banco de Script" />
-    <bpmn:dataStoreReference id="DataStoreReference_0b09nxt" name="Mockups del producto" />
     <bpmn:sequenceFlow id="SequenceFlow_02fwiwo" sourceRef="ExclusiveGateway_0k69c3e" targetRef="EndEvent_0r66j7v" />
     <bpmn:endEvent id="EndEvent_0r66j7v">
       <bpmn:incoming>SequenceFlow_02fwiwo</bpmn:incoming>
@@ -80,6 +76,9 @@
       <bpmn:incoming>SequenceFlow_1m9fg8w</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_02fwiwo</bpmn:outgoing>
     </bpmn:parallelGateway>
+    <bpmn:dataStoreReference id="DataStoreReference_0z87cog" name="Diagramas de datos" />
+    <bpmn:dataStoreReference id="DataStoreReference_0b09nxt" name="Mockups del producto" />
+    <bpmn:dataStoreReference id="DataStoreReference_07rp01m" name="Banco de Script" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_03mi37w">
@@ -90,20 +89,20 @@
         <dc:Bounds x="555" y="-382" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_07rp01m_di" bpmnElement="DataStoreReference_07rp01m">
-        <dc:Bounds x="835" y="-648" width="50" height="50" />
+        <dc:Bounds x="844" y="-629" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="821" y="-682" width="78" height="12" />
+          <dc:Bounds x="830" y="-663" width="78" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_0b09nxt_di" bpmnElement="DataStoreReference_0b09nxt">
-        <dc:Bounds x="654" y="-648" width="50" height="50" />
+        <dc:Bounds x="654" y="-629" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="648" y="-682" width="62" height="24" />
+          <dc:Bounds x="648" y="-663" width="62" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataOutputAssociation_02bl1sy_di" bpmnElement="DataOutputAssociation_02bl1sy">
         <di:waypoint x="679" y="-490" />
-        <di:waypoint x="679" y="-598" />
+        <di:waypoint x="679" y="-579" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Task_0sa8cze_di" bpmnElement="Task_0sa8cze">
         <dc:Bounds x="727" y="-382" width="100" height="80" />
@@ -128,7 +127,7 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Lane_11870un_di" bpmnElement="Lane_11870un">
-        <dc:Bounds x="298" y="-503" width="1140" height="232" />
+        <dc:Bounds x="298" y="-721" width="1140" height="450" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1m8xboh_di" bpmnElement="Lane_1m8xboh">
         <dc:Bounds x="298" y="-271" width="1140" height="232" />
@@ -139,9 +138,6 @@
           <dc:Bounds x="1212" y="-376" width="90" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1m1njkr_di" bpmnElement="Lane_1m1njkr">
-        <dc:Bounds x="298" y="-721" width="1140" height="218" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_110fa2y_di" bpmnElement="StartEvent_110fa2y">
         <dc:Bounds x="326" y="-416" width="36" height="36" />
         <bpmndi:BPMNLabel>
@@ -149,14 +145,14 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_0z87cog_di" bpmnElement="DataStoreReference_0z87cog">
-        <dc:Bounds x="752" y="-648" width="50" height="50" />
+        <dc:Bounds x="752" y="-629" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="742" y="-682" width="70" height="24" />
+          <dc:Bounds x="742" y="-666.5" width="69" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataOutputAssociation_1ktnio8_di" bpmnElement="DataOutputAssociation_1ktnio8">
         <di:waypoint x="777" y="-382" />
-        <di:waypoint x="777" y="-598" />
+        <di:waypoint x="777" y="-579" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_13d0sp5_di" bpmnElement="SequenceFlow_13d0sp5">
         <di:waypoint x="362" y="-398" />
@@ -191,8 +187,8 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_1d7rqyj_di" bpmnElement="DataOutputAssociation_1d7rqyj">
-        <di:waypoint x="789" y="-382" />
-        <di:waypoint x="853" y="-598" />
+        <di:waypoint x="791" y="-382" />
+        <di:waypoint x="860" y="-579" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="SequenceFlow_02fwiwo_di" bpmnElement="SequenceFlow_02fwiwo">
         <di:waypoint x="1177" y="-398" />
