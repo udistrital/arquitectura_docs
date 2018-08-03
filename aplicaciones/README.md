@@ -142,30 +142,36 @@ Dada la naturaleza distribuida de los microservicios hay dos factores asociados 
 
 ## Patrones relacionados a microservicios
 
-- Decomposition patterns
-    - Decompose by business capability
-    - Decompose by subdomain
-- The Database per Service pattern
-- The API Gateway pattern
-- The Client-side Discovery and Server-side Discovery patterns
-- The Messaging and Remote Procedure Invocation patterns
-- The Single Service per Host and Multiple Services per Host patterns
+- Patrones de descomposición:
+  - [Decompose by business capability](decompose_business_capabilities.md)
+  - [Decompose by subdomain](decompose_subdomain.md)
+- [The Database per Service pattern](database_per_service.md)
+- [The API Gateway pattern](api_gateway.md)
+- Patrones de descubrimiento:
+  - [Client-side Discovery pattern](client-side_discovery.md)
+  - [Server-side Discovery pattern](server-side_discovery.md)
+- Patrones de invocación:
+  - [Messaging invocation pattern](messaging_invocation.md)
+  - [Remote procedure invocation pattern](remote_procedure_invocation.md)
+- Patrones de despliegue:
+  - [Single Service per Host pattern](single_service_per_host.md)
+  - [Multiple Services per Host pattern](multiple_services_per_host.md)
 - Cross-cutting concerns patterns:
-    - Microservice chassis pattern
-    - Externalized configuration
+  - [Microservice chassis pattern](microservice_chassis.md)
+  - [Externalized configuration pattern](externalized_configuration.md)
 - Testing patterns:
-    - Service Component Test
-    - Service Integration Contract Test
-- Circuit Breaker
-- Access Token
-- Observability patterns:
-    - Log aggregation
-    - Application metrics
-    - Audit logging
-    - Distributed tracing
-    - Exception tracking
-    - Health check API
-    - Log deployments and changes
+  - [Service Component Test](service_component_test.md)
+  - [Service Integration Contract Test](service_integration_contract_test)
+- [Circuit Breaker](circuit_breaker.md)
+- [Access Token](access_token.md)
+- Patrones de observabilidad:
+  - [Log aggregation](log_aggregation.md)
+  - [Application metrics](application_metrics.md)
+  - [Audit logging](audit_logging.md)
+  - [Distributed tracing](distributed_tracing.md)
+  - [Exception tracking](exception_tracking.md)
+  - [Health check API](health_check_api.md)
+  - [Log deployments and changes](log_deployments_and_changes.md)
 - UI patterns:
-    - Server-side page fragment composition
-    - Client-side UI composition
+  - [Server-side page fragment composition](server_side_page_fragment.md)
+  - [Client-side UI composition](client_side_ui.md)
