@@ -7,6 +7,21 @@ La arquitectura de aplicaciones define el contexto de la estructura y caracterí
 
 La presente propuesta arquitectural surge de la difcultad actual en el desarrollo del ciclo de vida de los proyectos de software por la característica monolítica de las aplicaciones y su puesta en producción. La estructura actual definida para las aplicaciones en los proyectos de desarrollo es inapropiada para promover la implantación total de agilismo en los procesos de desarrollo y en las diferentes fases o etapas que estos conllevan.
 
+## Contexto
+
+En cualquier sistema de mediano o gran alcance en la actualidad se deben soportar diferentes tipos de puntos o medios de acceso, también es común que se requiera acceso desde terceros a ciertos componentes del sistema e integraciones con otros tipos de sistemas mediante el consumo de servicios o el manejo de mensajes los cuales consumen lógica del negocio que corresponde a diferentes áreas funcionales del sistema.
+
+## Características del entorno del sistema
+
+* Hay equipos variables de desarrolladores trabajando en el sistema.
+* Los nuevos miembros que llegan al equipo deben ser productivos lo más pronto posible.
+* El sistema debe tener alta adaptabilidad y flexibilidad.
+* Debe tener un alto grado de comprensibilidad dados los requerimientos de adaptabilidad.
+* Se establece el sistema dentro de un entorno de integración y despliegue continuo.
+* Existen requerimientos fuertes de escalabilidad y disponibilidad.
+* Se desea aprovechar las ventajas de las tecnologías emergentes.
+
+
 ## Entorno general de aplicaciones
 
 ![entorno](genericodesarollo.png "entorno general")
@@ -74,7 +89,7 @@ La generación de microservicios permite desacoplar los módulos de las aplicaci
 
 ![arquitectura_microservicios](arquitectura_general_servicios.png "microservicios arquitectura")
 
-### Clente:
+### Cliente:
 El cliente en la estructura de aplicaciones consistenen un estático que obedece al aradigma de "serverless" que únicamente maneja la capa de presentación hacia el usuario final, este componente de la estructura de aplicaciones genera peticiones al api-manager las cuales estánnorientadas a servicios de tipo MID.
 
 ### Identity Server:
@@ -124,3 +139,33 @@ Dada la naturaleza distribuida de los microservicios hay dos factores asociados 
 * Ningun microservicio debe consumir directamente otro microservicio y el llamado ocurre mediante el Gateway (API Manager).
 * Los microservicios integradores (servicios MID) no deben realizar operaciones sobre la persistencia ni manejar conexiones a bases de datos, ya que delegan estas operaciones a los servicios CRUD.
 * los servicios independientemente de la orientación de estos deben gestionar la validación del token de autenticación del uauario y la validación de permisos sobre las operaciones que estos ofrecen.
+
+## Patrones relacionados a microservicios
+
+- Decomposition patterns
+    - Decompose by business capability
+    - Decompose by subdomain
+- The Database per Service pattern
+- The API Gateway pattern
+- The Client-side Discovery and Server-side Discovery patterns
+- The Messaging and Remote Procedure Invocation patterns
+- The Single Service per Host and Multiple Services per Host patterns
+- Cross-cutting concerns patterns:
+    - Microservice chassis pattern
+    - Externalized configuration
+- Testing patterns:
+    - Service Component Test
+    - Service Integration Contract Test
+- Circuit Breaker
+- Access Token
+- Observability patterns:
+    - Log aggregation
+    - Application metrics
+    - Audit logging
+    - Distributed tracing
+    - Exception tracking
+    - Health check API
+    - Log deployments and changes
+- UI patterns:
+    - Server-side page fragment composition
+    - Client-side UI composition
