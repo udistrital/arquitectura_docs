@@ -90,7 +90,9 @@ La generación de microservicios permite desacoplar los módulos de las aplicaci
 ![arquitectura_microservicios](arquitectura_general_servicios.png "microservicios arquitectura")
 
 ### Cliente:
-El cliente en la estructura de aplicaciones consistenen un estático que obedece al aradigma de "serverless" que únicamente maneja la capa de presentación hacia el usuario final, este componente de la estructura de aplicaciones genera peticiones al api-manager las cuales estánnorientadas a servicios de tipo MID.
+El cliente en la estructura de aplicaciones consisten en un componente estático que obedece al paradigma de "serverless" que únicamente maneja la capa de presentación hacia el usuario final, este componente de la estructura de aplicaciones genera peticiones al api-manager las cuales están orientadas a servicios de tipo MID.
+
+Al estar definidos dentro de una arquitectura serverless permite que los clientes generados sean no-inteligentes, es decir que no embeban inteligencia de negocio en sus componentes, facilitando de esta manera el remplazo del cliente en cualquier momento o la generación de múltiples clientes desde distintas plataformas.
 
 ### Identity Server:
 El Indentity server es el componente de autenticación, este componente es único para todos los servicios, su responsabilidad es autenticar a los usuarios, generar el token de autenticación y validar este cunado las APIs lo solicitan.
