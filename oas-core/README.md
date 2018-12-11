@@ -11,3 +11,6 @@
 
 ## Vista Espacio Físico
 ![espacios](imagenes/vista_espacio_fisico.png "epacios fisicos")
+
+## Vista Documento
+![documento](imagenes/vista_documento.png "documento")
