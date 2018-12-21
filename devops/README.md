@@ -51,26 +51,26 @@ La monitorización consiste en la vigilancia de todos los servicios activos que 
 
 ### Consistencia:
 
--- Todos los procedimientos son comunes para todos los entornos.
--- Todas las tareas necesarias para implantar están identificadas en un único lugar.
--- Se utilizan procedimientos de construcción homogéneos y controlados.
--- Se utiliza las mismas herramientas de implantación para todos los entornos.
--- Se utiliza las mismas herramientas de infraestructura para todos los entornos.
+- Todos los procedimientos son comunes para todos los entornos.
+- Todas las tareas necesarias para implantar están identificadas en un único lugar.
+- Se utilizan procedimientos de construcción homogéneos y controlados.
+- Se utiliza las mismas herramientas de implantación para todos los entornos.
+- Se utiliza las mismas herramientas de infraestructura para todos los entornos.
 
 ### Eficiencia:
 
--- Reducción de las tareas manuales.
--- Reducción de tareas redundantes y por lo tanto innecesarias.
--- La información estará siempre accesible.
--- Reducción de la dependencia del conocimiento de una persona.
+- Reducción de las tareas manuales.
+- Reducción de tareas redundantes y por lo tanto innecesarias.
+- La información estará siempre accesible.
+- Reducción de la dependencia del conocimiento de una persona.
 
 ### Seguridad:
 
--- Minimización del ratio de error manual
--- Mismo despliegue en todos los entornos
+- Minimización del ratio de error manual
+- Mismo despliegue en todos los entornos
 
 ### Visibilidad:
 
--- Inventario de los artefactos que forman las aplicaciones.
--- Instalación controlada y gestionada
--- Simplicidad en las auditorias
+- Inventario de los artefactos que forman las aplicaciones.
+- Instalación controlada y gestionada
+- Simplicidad en las auditorias
