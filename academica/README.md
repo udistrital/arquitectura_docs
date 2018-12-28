@@ -18,3 +18,6 @@ Documento de arquitectura para la oficina asesora de sistemas del nuevo sistema 
 
 ### Recaudos
 ![recaudos](imagenes/vista_recaudos.png "Recaudos")
+
+### Registros espacios académicos
+![registro_espacios_academicos](imagenes/vista_registros_espacios_academicos.png "Registros espacios académicos")
