@@ -11,6 +11,9 @@ Documento de arquitectura para la oficina asesora de sistemas del nuevo sistema 
 ### Docentes
 ![docentes](imagenes/vista_docentes.png "Docentes")
 
+### Gestión de grados
+![gestion_grados](imagenes/vista_gestion_grados.png "Gestión de grados")
+
 ### Plan de estudios
 ![plan_estudios](imagenes/vista_plan_estudios.png "Plan de estudios")
 
