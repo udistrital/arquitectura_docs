@@ -8,6 +8,9 @@ Documento de arquitectura para la oficina asesora de sistemas del nuevo sistema 
 ### Admisiones
 ![admisiones](imagenes/vista_admisiones.png "Admisiones")
 
+### Certificados
+![certificados](imagenes/vista_certificados.png "Certificados")
+
 ### Docentes
 ![docentes](imagenes/vista_docentes.png "Docentes")
 
