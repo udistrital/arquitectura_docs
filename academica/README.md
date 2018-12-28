@@ -1,5 +1,7 @@
 # Académica
-Documento de arquitectura para la oficina asesora de sistemas del nuevo sistema de información académica
+Documento de vistas por incumbencias del nuevo sistema de información académica para la oficina asesora de sistemas
+
+
 ## Incumbencias
 
 ### administración de notas
