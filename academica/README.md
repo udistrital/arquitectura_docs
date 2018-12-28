@@ -1,14 +1,18 @@
 # Académica
 Documento de arquitectura para la oficina asesora de sistemas del nuevo sistema de información académica
 ## Incumbencias
+
+### administración de notas
+![administracion_notas](imagenes/vista_administracion_notas.png "Administración de notas")
+
 ### Admisiones
-![admisiones](imagenes/vista_admisiones.png "admisiones")
+![admisiones](imagenes/vista_admisiones.png "Admisiones")
 
 ### Docentes
-![docentes](imagenes/vista_docentes.png "docentes")
+![docentes](imagenes/vista_docentes.png "Docentes")
 
 ### Plan de estudios
-![plan_estudios](imagenes/vista_plan_estudios.png "plan de estudios")
+![plan_estudios](imagenes/vista_plan_estudios.png "Plan de estudios")
 
 ### Programación académica
 ![programacion_academica](imagenes/vista_programacion_academica.png "Programación académica")
