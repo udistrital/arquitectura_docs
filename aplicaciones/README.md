@@ -58,9 +58,9 @@ Así mismo establece unos principios rectores en los que:
 ## Microservicios
 
 ### Micro-servicios, que son?
-Las arquitecturas orientadas a micro-servicios buscan descomponer aplicaciones monolíticas para mejorar las capacidades de despliegue y escalabilidad  en ambientes de frecuentes cambios y evolución de los sistemas. Esta descomposición propone retos no presentes en aplicaciones monolíticas.
+Las arquitecturas orientadas a micro-servicios buscan descomponer aplicaciones monolíticas para mejorar las capacidades de despliegue y escalabilidad en ambientes de frecuentes cambios y evolución de los sistemas. Esta descomposición propone retos no presentes en aplicaciones monolíticas.
 
-Microservicios es el nombre de un estilo arquitectural de software, influenciado por el software distribuido. Un aspecto distintivo es la aplicación a nivel de componentes del principio de resposabilidad única, lo que se refleja en el hecho de que cada uno de los microservicios es responsable de un único problema en concreto.
+Microservicios es el nombre de un estilo arquitectural de software, influenciado por el software distribuido. Un aspecto distintivo es la aplicación a nivel de componentes del principio de resposabilidad única, lo que se refleja en el hecho de que _cada uno de los microservicios es responsable de un único problema en concreto_.
 
 Según Martín Fowler la arquitectura de microservicios es una particular manera de diseñar aplicaciones de software como un conjunto de servicios independientemente desplegables.
 
@@ -87,7 +87,7 @@ Para gestionar estas dependencias se sugiere el uso de un API Gateway, esta es u
 ## Arquitectura general de microservicios
 La generación de microservicios permite desacoplar los módulos de las aplicaciones para facilitar su despliegue, pero esto supone el reto de establecer el mecanismo para que estos servicios trabajen en conjunto, la siguiente gráfica presenta la estructura propuesta para organizar dicho mecanismo, permitiendo a característica de servicios agnósticos.
 
-![arquitectura_microservicios](arquitectura_general_servicios.png "microservicios arquitectura")
+![arquitectura_microservicios](Arquitectura_base_microservicios.png "microservicios arquitectura")
 
 ### Cliente:
 El cliente en la estructura de aplicaciones consisten en un componente estático que obedece al paradigma de "serverless" que únicamente maneja la capa de presentación hacia el usuario final, este componente de la estructura de aplicaciones genera peticiones al api-manager las cuales están orientadas a servicios de tipo MID.
@@ -98,7 +98,7 @@ Al estar definidos dentro de una arquitectura serverless permite que los cliente
 El Indentity server es el componente de autenticación, este componente es único para todos los servicios, su responsabilidad es autenticar a los usuarios, generar el token de autenticación y validar este cunado las APIs lo solicitan.
 
 ### API Gateway:
-El API Gateway se comporta como un Gateway de solicitudes entre aplicaciones, toda la comunicación de solicitudes entre servicios debe ser atentida por el API Gateway y este direccionará la petición deacuerdo al catalogo de servicios configurados.
+El API Gateway es la puerta de enlace de las solicitudes entre aplicaciones, toda la comunicación de solicitudes entre servicios debe ser atentida por el API Gateway y este direccionará la petición de acuerdo al catalogo de servicios configurados.
 
 ### Auditoría:
 El servicio de auditoría es el responsable de registrar todos los eventos que ocurren entre los diferentes servicios, ya que el responsable de gestionar estos eventos es el API Manager, sera este quien se conecte con el servicio de auditoría para el registro del evento.
@@ -115,8 +115,8 @@ En estos servicios, se maneja la lógica de negocio en colaboración con el RULE
 ### Configuración
 Con la proliferación de microservicios, permitir que cada uno maneje su configuración puede ser un problema de gestión inmanejable, por esto debe existir un nodo centralizado de configuración que actúe como repositorio de la configuración para todo el entorno de microservicios.
 
-## Modelo de implementación
-![arquitectura_implementacion_microservicios](arquitectura_implementacion_microservicios.png "arquitectura implementación")
+### Modelo de implementación
+![arquitectura_implementacion_microservicios](Arquitectura_microservicios_modelo_implementacion.png "arquitectura implementación")
 ## Modelo de despliegue
 
 ![entorno_ci](entorno_ci.png "entorno ci")
